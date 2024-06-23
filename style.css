@@ -1,0 +1,56 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+body{
+    background-color: #f8f9fa;
+    font-family: Jost,Arial, sans-serif;
+}
+
+#main{
+    height: 100%;
+    width: 200vh;
+}
+
+#formdiv{
+    height: 90vh;
+    border-radius: 2%;
+    overflow: auto;
+}
+
+#gbox{
+    border: 1px solid rgba(63, 63, 63, 0.5);
+    height: 2.5rem;
+    width: 95%;
+    border-radius: 6px;
+    background-color:white;
+}
+
+.password-toggle {
+    cursor: pointer;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.form-control {
+    padding-right: 2.5rem; /* Add some padding to make room for the icon */
+}
+
+@media only screen and (max-width: 600px) {
+    #gbox{
+        font-size: smaller;
+    }
+}
+
+
+@media only screen and (min-device-width: 992px) and (max-device-width:1216px) {
+    /* For landscape layouts only */
+    #gbox{
+        font-size: smaller;
+    }
+    #formdiv{
+        width: 53%;
+    }
+  }
